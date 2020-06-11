@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 780px;
+    margin: auto;
+    background-color: rgb(134, 130, 130);
+    height: auto;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    text-align: center;
+}
+
+.active {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.topnav a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+#myLinks {
+    display: none;
+}
+.topnav a.icon {
+    background-color: #000;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.container1 {
+    width: 90%;
+    margin: auto;
+    
+}
+
+.blog {
+    padding: 30px 0;
+    text-align: center;
+    
+}
+
+.blog_content h1 {
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+    color: #ddd;
+    text-shadow: 2px 2px 3px #000;
+    letter-spacing: 2px;
+}
+
+
+.work {
+    border: 1px solid red;    
+
+}
+.work__content {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.work__content img {
+    margin-bottom: 15px;
+}
+
+.work__content h2 {
+    text-shadow: 2px 2px 3px #000;
+    margin-bottom: 15px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+}
+
+.work__content p {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.work__content span {
+    color: #000;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.contact {
+    background: radial-gradient(circle, #111, #333);
+    text-align: center;
+}
+
+.contact__content {
+    padding: 50px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.contact__content h1 {
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+    color: #ddd;
+    text-shadow: 2px 2px 3px #000;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.contact__content p {
+    font-family: 'Fjalla One', sans-serif;
+    color: #eee;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.contact__content a {
+    padding: 25px 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    color: #000;
+}
+
+@media only screen and (min-width: 783px){
+    .container {
+        max-width: 90%;
+        
+    }
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #myLinks {
+        
+        padding: 14px 16px;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .topnav a.icon {
+        display: none;
+        
+    }
+    .blog {
+        padding: 60px 0;
+        text-align: center;
+        
+    }
+    
+    .blog_content h1 {
+        background-color: #eee;
+        color: #881188;
+        padding: 10px 0;
+        font-size: 4rem;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .work__content img {
+        width: 95%;
+        opacity: .6;
+        transition: .3s;
+        border-radius: 5px;
+    }
+
+    .work__content img:hover {
+        opacity: 1;
+    }
+    .work__content h2 {
+        font-size: 2rem;
+    }
+    
+    .work__content p {
+        font-size: 1.2rem;
+        line-height: 33px;
+        
+    }
+    .work__content span {
+        color: #000;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    
+    .contact__content {
+        padding: 80px 300px;
+        
+    }
+    
+    .contact__content h1 {
+        font-size: 2.5rem;
+        font-family: 'Anton', sans-serif;
+        color: #ddd;
+        text-shadow: 2px 2px 3px #000;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+    
+    .contact__content p {
+        font-family: 'Fjalla One', sans-serif;
+        color: #eee;
+        font-size: 1.1rem;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .contact__content a {
+        display: inline-block;
+        padding: 25px 35px;
+        background-color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-family: 'Fjalla One', sans-serif;
+        color: #000;
+    }
+}   
+
+
+@media only screen and (min-width: 1000px){
+    .container {
+        max-width: 90%;
+        
+    }
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #myLinks {
+        
+        padding: 14px 16px;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .topnav a.icon {
+        display: none;
+        
+    }
+    .blog {
+        padding: 60px 0;
+        text-align: center;
+        
+    }
+    
+    .blog_content h1 {
+        background-color: #eee;
+        color: #881188;
+        padding: 10px 0;
+        font-size: 4rem;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .work__content img {
+        width: 95%;
+        opacity: .6;
+        transition: .3s;
+        border-radius: 5px;
+    }
+
+    .work__content img:hover {
+        opacity: 1;
+    }
+    .work__content h2 {
+        font-size: 2rem;
+    }
+    
+    .work__content p {
+        font-size: 1.2rem;
+        line-height: 33px;
+        
+    }
+    .work__content span {
+        color: #000;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    
+    .contact__content {
+        padding: 80px 300px;
+        
+    }
+    
+    .contact__content h1 {
+        font-size: 2.5rem;
+        font-family: 'Anton', sans-serif;
+        color: #ddd;
+        text-shadow: 2px 2px 3px #000;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+    
+    .contact__content p {
+        font-family: 'Fjalla One', sans-serif;
+        color: #eee;
+        font-size: 1.1rem;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .contact__content a {
+        display: inline-block;
+        padding: 25px 35px;
+        background-color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-family: 'Fjalla One', sans-serif;
+        color: #000;
+    }
+}
